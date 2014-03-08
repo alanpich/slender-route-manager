@@ -1,7 +1,11 @@
 {
     "name": "slender/route-manager",
+    "type": "library",
     "description": "RouteManager module for Slender",
+    "keywords": ["slender-module","route","routing","router"],
     "license": "MIT",
+    "version": "0.1.0",
+    "homepage": "http://alanpich.github.io/slender",
     "authors": [
         {
             "name": "Alan Pich",
