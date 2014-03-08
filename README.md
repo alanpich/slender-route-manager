@@ -6,10 +6,6 @@ Slender RouteManager module
 Provides config-defined routes, route nesting and
 inheritance, and a basic Controller class
 
-See [documentation][1]
+See [documentation](http://alanpich.github.io/slender)
 
 
-
-
-
- [1] http://alanpich.github.io/slender
