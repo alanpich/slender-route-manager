@@ -9,6 +9,6 @@ inheritance, and a basic Controller class
 See [documentation](http://alanpich.github.io/slender)
 
 
-`composer require slender/route-manager:0.1.0`
+`composer require slender/route-manager:0.0.1`
 
 
