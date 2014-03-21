@@ -48,7 +48,9 @@ abstract class AbstractController
     protected function render($tpl, $data = array())
     {
         $content = $this->view->fetch($tpl, $data);
-        $this->getResponse()->setBody($content);
+        $resource = fopen('data://text/plain,' . $content,'r');
+        $stream = new Stream($resource);
+        $this->getResponse()->setBody($stream);
     }
 
 
