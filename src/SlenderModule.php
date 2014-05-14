@@ -21,6 +21,14 @@ class SlenderModule implements ModulePathProviderInterface,
 
     public function invoke(\Slender\App &$app)
     {
+
+        $di = $app['dependency-injector'];
+        // Register global middleware
+        foreach($app['settings']['middleware'] as $middlewareClass){
+            $app->add($di->create($middlewareClass));
+        }
+
+
         $routes = array();
         foreach ($app['settings']['routes'] as $name => $r) {
             if (is_array($r) && isset($r['route'])) {
